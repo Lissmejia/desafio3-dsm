@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar Recurso"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Campos editables -->
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción" />
+
+        <EditText
+            android:id="@+id/etTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo (video, documento, etc.)" />
+
+        <EditText
+            android:id="@+id/etEnlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enlace URL"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/etImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL de imagen (opcional)"
+            android:inputType="textUri" />
+
+        <!-- Botón para guardar cambios -->
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Cambios"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
